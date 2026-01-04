@@ -1,0 +1,2 @@
+2025-12-26 10:14:57.167 ERROR [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Exception: BusinessException - 出场失败: 车辆 ABC-001 不在停车场中!
+2025-12-26 10:22:08.694 ERROR [http-nio-8080-exec-10] com.example.parkinglot.common.aspect.WebLogAspect - Exception: BusinessException - 出场失败: 车辆 ABC-001 不在停车场中!

@@ -1,0 +1,819 @@
+2025-12-24 10:21:15.961 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 10:21:15.981 INFO  [main] com.example.parkinglot.ParkinglotApplication - Starting ParkinglotApplication using Java 21.0.9 with PID 45978 (/Users/haoyu/IdeaProjects/parkinglot/target/classes started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 10:21:15.981 INFO  [main] com.example.parkinglot.ParkinglotApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:21:16.240 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 10:21:16.272 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2025-12-24 10:21:16.527 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-24 10:21:16.533 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:21:16.533 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:21:16.534 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 10:21:16.555 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:21:16.555 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 560 ms
+2025-12-24 10:21:16.633 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 10:21:16.652 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 10:21:16.663 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 10:21:16.762 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 10:21:16.773 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:21:16.819 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48b2dbc4
+2025-12-24 10:21:16.820 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:21:16.836 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 10:21:16.844 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 10:21:17.150 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 10:21:17.208 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:21:17.439 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 10:21:17.593 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:21:17.602 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-24 10:21:17.606 INFO  [main] com.example.parkinglot.ParkinglotApplication - Started ParkinglotApplication in 1.853 seconds (process running for 1.995)
+2025-12-24 10:21:43.904 INFO  [http-nio-8080-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 10:21:43.904 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 10:21:43.905 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-24 10:21:43.952 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ===========================================
+2025-12-24 10:21:43.952 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/vehicle/addVehicle
+2025-12-24 10:21:43.952 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 10:21:43.952 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 10:21:43.953 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.VehicleController.addVehicle
+2025-12-24 10:21:43.953 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [VehicleRequestDTO(vehiclePlate=ABC-008, type=LARGE)]
+2025-12-24 10:21:43.984 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=Vehicle(Id=7, vehiclePlate=ABC-008, type=LARGE))
+2025-12-24 10:21:43.985 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ===========================================
+2025-12-24 10:23:38.162 INFO  [SpringApplicationShutdownHook] o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 10:23:38.166 INFO  [tomcat-shutdown] o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 10:23:38.168 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:23:38.169 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:23:38.170 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:23:39.530 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 10:23:39.549 INFO  [main] com.example.parkinglot.ParkinglotApplication - Starting ParkinglotApplication using Java 21.0.9 with PID 46043 (/Users/haoyu/IdeaProjects/parkinglot/target/classes started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 10:23:39.550 INFO  [main] com.example.parkinglot.ParkinglotApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:23:39.778 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 10:23:39.806 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2025-12-24 10:23:40.032 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-24 10:23:40.037 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:23:40.038 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:23:40.038 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 10:23:40.056 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:23:40.056 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 493 ms
+2025-12-24 10:23:40.126 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 10:23:40.139 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 10:23:40.149 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 10:23:40.228 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 10:23:40.237 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:23:40.288 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d8056bf
+2025-12-24 10:23:40.289 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:23:40.302 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 10:23:40.309 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 10:23:40.597 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 10:23:40.653 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:23:40.876 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 10:23:41.032 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:23:41.040 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-24 10:23:41.044 INFO  [main] com.example.parkinglot.ParkinglotApplication - Started ParkinglotApplication in 1.708 seconds (process running for 1.838)
+2025-12-24 10:23:46.190 INFO  [http-nio-8080-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 10:23:46.190 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 10:23:46.192 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-24 10:23:46.231 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - ===========================================
+2025-12-24 10:23:46.231 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/vehicle/addVehicle
+2025-12-24 10:23:46.231 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 10:23:46.232 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 10:23:46.232 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.VehicleController.addVehicle
+2025-12-24 10:23:46.232 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [VehicleRequestDTO(vehiclePlate=ABC-008, type=LARGE)]
+2025-12-24 10:23:46.278 WARN  [http-nio-8080-exec-2] c.e.p.common.exception.GlobalExceptionHandler - 业务异常: 车辆已经存在！
+2025-12-24 10:49:11.687 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - ===========================================
+2025-12-24 10:49:11.688 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/vehicle/addVehicle
+2025-12-24 10:49:11.688 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 10:49:11.688 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 10:49:11.688 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.VehicleController.addVehicle
+2025-12-24 10:49:11.688 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [VehicleRequestDTO(vehiclePlate=ABC-009, type=LARGE)]
+2025-12-24 10:49:11.722 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=Vehicle(Id=8, vehiclePlate=ABC-009, type=LARGE))
+2025-12-24 10:49:11.724 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - ===========================================
+2025-12-24 10:52:00.680 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - ===========================================
+2025-12-24 10:52:00.680 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/vehicle/addVehicle
+2025-12-24 10:52:00.680 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 10:52:00.681 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 10:52:00.681 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.VehicleController.addVehicle
+2025-12-24 10:52:00.681 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [VehicleRequestDTO(vehiclePlate=ABC-010, type=LARGE)]
+2025-12-24 10:52:00.688 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=Vehicle(Id=9, vehiclePlate=ABC-010, type=LARGE))
+2025-12-24 10:52:00.688 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - ===========================================
+2025-12-24 10:52:29.427 INFO  [SpringApplicationShutdownHook] o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 10:52:29.431 INFO  [tomcat-shutdown] o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 10:52:29.433 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:52:29.436 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:52:29.437 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:52:30.873 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 10:52:30.896 INFO  [main] com.example.parkinglot.ParkinglotApplication - Starting ParkinglotApplication using Java 21.0.9 with PID 46915 (/Users/haoyu/IdeaProjects/parkinglot/target/classes started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 10:52:30.897 INFO  [main] com.example.parkinglot.ParkinglotApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:52:31.160 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 10:52:31.192 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 3 JPA repository interfaces.
+2025-12-24 10:52:31.445 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-24 10:52:31.450 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:52:31.451 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:52:31.452 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 10:52:31.472 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:52:31.473 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 559 ms
+2025-12-24 10:52:31.554 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 10:52:31.571 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 10:52:31.583 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 10:52:31.681 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 10:52:31.691 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:52:31.736 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58b8f9e3
+2025-12-24 10:52:31.736 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:52:31.752 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 10:52:31.760 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 10:52:32.078 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 10:52:32.137 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:52:32.386 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 10:52:32.545 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:52:32.554 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-24 10:52:32.558 INFO  [main] com.example.parkinglot.ParkinglotApplication - Started ParkinglotApplication in 1.906 seconds (process running for 2.048)
+2025-12-24 10:54:58.820 INFO  [SpringApplicationShutdownHook] o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 10:54:58.824 INFO  [tomcat-shutdown] o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 10:54:58.826 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:54:58.828 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 10:54:58.829 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 10:55:00.243 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 10:55:00.268 INFO  [main] com.example.parkinglot.ParkinglotApplication - Starting ParkinglotApplication using Java 21.0.9 with PID 47011 (/Users/haoyu/IdeaProjects/parkinglot/target/classes started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 10:55:00.268 INFO  [main] com.example.parkinglot.ParkinglotApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 10:55:00.518 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 10:55:00.545 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2025-12-24 10:55:00.784 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-24 10:55:00.789 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:55:00.790 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 10:55:00.790 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 10:55:00.807 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 10:55:00.807 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 523 ms
+2025-12-24 10:55:00.877 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 10:55:00.892 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 10:55:00.903 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 10:55:00.985 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 10:55:00.995 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 10:55:01.035 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58b8f9e3
+2025-12-24 10:55:01.036 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 10:55:01.049 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 10:55:01.057 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 10:55:01.364 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 10:55:01.426 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:55:01.653 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 10:55:01.808 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 10:55:01.818 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-24 10:55:01.822 INFO  [main] com.example.parkinglot.ParkinglotApplication - Started ParkinglotApplication in 1.797 seconds (process running for 1.935)
+2025-12-24 10:55:49.334 INFO  [http-nio-8080-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 10:55:49.334 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 10:55:49.335 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-24 10:55:49.371 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 10:55:49.371 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/vehicle/addVehicle
+2025-12-24 10:55:49.371 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 10:55:49.371 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 10:55:49.372 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.VehicleController.addVehicle
+2025-12-24 10:55:49.372 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [VehicleRequestDTO(vehiclePlate=ABC-006, type=LARGE)]
+2025-12-24 10:55:49.426 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=Vehicle(Id=10, vehiclePlate=ABC-006, type=LARGE))
+2025-12-24 10:55:49.427 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 12:17:46.269 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m44s574ms).
+2025-12-24 12:34:54.735 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m4s813ms).
+2025-12-24 12:38:15.555 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m50s817ms).
+2025-12-24 12:39:21.633 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s78ms).
+2025-12-24 12:45:22.693 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m31s50ms).
+2025-12-24 12:56:45.437 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m46s828ms).
+2025-12-24 13:14:00.339 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m14s895ms).
+2025-12-24 13:17:31.371 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m31s32ms).
+2025-12-24 13:32:25.334 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m23s956ms).
+2025-12-24 13:38:40.493 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m45s153ms).
+2025-12-24 14:10:57.902 INFO  [SpringApplicationShutdownHook] o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 14:10:57.905 INFO  [tomcat-shutdown] o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 14:10:57.907 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 14:10:57.908 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 14:10:57.909 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 14:10:59.515 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 14:10:59.535 INFO  [main] com.example.parkinglot.ParkinglotApplication - Starting ParkinglotApplication using Java 21.0.9 with PID 55120 (/Users/haoyu/IdeaProjects/parkinglot/target/classes started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 14:10:59.536 INFO  [main] com.example.parkinglot.ParkinglotApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 14:10:59.785 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 14:10:59.814 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2025-12-24 14:11:00.056 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-24 14:11:00.061 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 14:11:00.062 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 14:11:00.062 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 14:11:00.080 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 14:11:00.081 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 530 ms
+2025-12-24 14:11:00.161 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 14:11:00.178 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 14:11:00.189 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 14:11:00.279 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 14:11:00.290 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 14:11:00.329 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@10d98940
+2025-12-24 14:11:00.330 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 14:11:00.346 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 14:11:00.353 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 14:11:00.648 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 14:11:00.860 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 14:11:01.152 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 14:11:01.321 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 14:11:01.331 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-24 14:11:01.335 INFO  [main] com.example.parkinglot.ParkinglotApplication - Started ParkinglotApplication in 2.018 seconds (process running for 2.154)
+2025-12-24 14:12:08.514 INFO  [http-nio-8080-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 14:12:08.514 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 14:12:08.515 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-24 14:12:08.529 ERROR [http-nio-8080-exec-2] c.e.p.common.exception.GlobalExceptionHandler - 系统异常
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/status-list/FREE.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-24 14:32:46.589 INFO  [SpringApplicationShutdownHook] o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 14:32:46.592 INFO  [tomcat-shutdown] o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 14:32:46.595 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 14:32:46.596 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 14:32:46.597 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 14:32:48.018 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 14:32:48.037 INFO  [main] com.example.parkinglot.ParkinglotApplication - Starting ParkinglotApplication using Java 21.0.9 with PID 55786 (/Users/haoyu/IdeaProjects/parkinglot/target/classes started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 14:32:48.038 INFO  [main] com.example.parkinglot.ParkinglotApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 14:32:48.286 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 14:32:48.314 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2025-12-24 14:32:48.545 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-24 14:32:48.550 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 14:32:48.551 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 14:32:48.551 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 14:32:48.571 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 14:32:48.571 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 518 ms
+2025-12-24 14:32:48.648 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 14:32:48.664 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 14:32:48.674 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 14:32:48.767 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 14:32:48.777 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 14:32:48.820 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@298263fa
+2025-12-24 14:32:48.821 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 14:32:48.837 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 14:32:48.845 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 14:32:49.144 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 14:32:49.197 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 14:32:49.428 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 14:32:49.586 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 14:32:49.594 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-24 14:32:49.598 INFO  [main] com.example.parkinglot.ParkinglotApplication - Started ParkinglotApplication in 1.782 seconds (process running for 1.916)
+2025-12-24 14:32:54.907 INFO  [http-nio-8080-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 14:32:54.907 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 14:32:54.908 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-24 14:32:54.913 WARN  [http-nio-8080-exec-1] org.springframework.web.servlet.PageNotFound - No mapping for GET /api/status-list/FREE
+2025-12-24 14:32:54.918 ERROR [http-nio-8080-exec-1] c.e.p.common.exception.GlobalExceptionHandler - 接口不存在 - 请求方法：GET，请求路径：/api/status-list/FREE
+org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /api/status-list/FREE.
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1305)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-24 14:33:24.718 WARN  [http-nio-8080-exec-3] org.springframework.web.servlet.PageNotFound - No mapping for GET /api/parking-slots/status-list/FREE
+2025-12-24 14:33:24.720 ERROR [http-nio-8080-exec-3] c.e.p.common.exception.GlobalExceptionHandler - 接口不存在 - 请求方法：GET，请求路径：/api/parking-slots/status-list/FREE
+org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /api/parking-slots/status-list/FREE.
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1305)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-12-24 14:36:29.683 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 14:36:29.684 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/parking-slots/status-list
+2025-12-24 14:36:29.684 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Method   : GET
+2025-12-24 14:36:29.684 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 14:36:29.684 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.ParkingSlotController.getListByStatus
+2025-12-24 14:36:29.684 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [FREE]
+2025-12-24 14:36:29.744 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, msg=操作成功, data=List(size=2))
+2025-12-24 14:36:29.744 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 14:50:37.492 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 14:50:37.493 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/entry/ABC-007
+2025-12-24 14:50:37.493 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 14:50:37.493 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 14:50:37.493 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.createEntryTicket
+2025-12-24 14:50:37.493 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-007]
+2025-12-24 14:50:37.497 INFO  [http-nio-8080-exec-9] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-007，开始检验: 
+2025-12-24 14:50:37.514 INFO  [http-nio-8080-exec-9] c.e.parkinglot.service.impl.TicketServiceImpl - >>查找到空闲车位: A005
+2025-12-24 14:50:37.520 INFO  [http-nio-8080-exec-9] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A005状态为: OCCUPIED
+2025-12-24 14:50:37.522 INFO  [http-nio-8080-exec-9] c.e.parkinglot.service.impl.TicketServiceImpl - >>新建票据，保存到数据库, 票据id: null
+2025-12-24 14:50:37.542 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=EntryDTO(vehiclePlate=ABC-007, slotNumber=A005, entryTime=2025-12-24T14:50:37.522430, ticketStatus=null))
+2025-12-24 14:50:37.543 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:00:36.586 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:00:36.586 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-007
+2025-12-24 15:00:36.587 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 15:00:36.587 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 15:00:36.587 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-24 15:00:36.587 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-007]
+2025-12-24 15:00:36.588 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-007，开始检验: 
+2025-12-24 15:00:36.597 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 5
+2025-12-24 15:00:36.601 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A005状态为: FREE
+2025-12-24 15:00:36.602 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 5
+2025-12-24 15:00:36.607 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=ExitDTO(vehiclePlate=ABC-007, slotNumber=A005, entryTime=2025-12-24T14:50:37.522430, exitTime=2025-12-24T15:00:36.602268, ticketStatus=PAID, totalAmount=16.00))
+2025-12-24 15:00:36.607 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:35:35.102 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m15s762ms).
+2025-12-24 15:37:56.430 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m21s328ms).
+2025-12-24 15:41:17.048 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:41:17.048 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-24 15:41:17.048 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 15:41:17.049 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 15:41:17.049 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-24 15:41:17.049 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-24 15:41:17.050 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 15:41:17.057 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 1
+2025-12-24 15:41:17.060 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: FREE
+2025-12-24 15:41:17.061 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 1112.00
+2025-12-24 15:41:17.061 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 1
+2025-12-24 15:41:17.067 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=ExitDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-18T21:07:49.342560, exitTime=2025-12-24T15:41:17.061034, ticketStatus=PAID, totalAmount=1112.00))
+2025-12-24 15:41:17.067 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:41:23.351 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:41:23.353 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-002
+2025-12-24 15:41:23.353 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 15:41:23.353 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 15:41:23.353 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-24 15:41:23.354 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-002]
+2025-12-24 15:41:23.355 INFO  [http-nio-8080-exec-6] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-002，开始检验: 
+2025-12-24 15:41:23.364 INFO  [http-nio-8080-exec-6] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 3
+2025-12-24 15:41:23.366 INFO  [http-nio-8080-exec-6] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A004状态为: FREE
+2025-12-24 15:41:23.366 INFO  [http-nio-8080-exec-6] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 1256.00
+2025-12-24 15:41:23.366 INFO  [http-nio-8080-exec-6] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 3
+2025-12-24 15:41:23.371 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=ExitDTO(vehiclePlate=ABC-002, slotNumber=A004, entryTime=2025-12-19T10:08:58.166247, exitTime=2025-12-24T15:41:23.366603, ticketStatus=PAID, totalAmount=1256.00))
+2025-12-24 15:41:23.372 INFO  [http-nio-8080-exec-6] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:49:53.881 INFO  [SpringApplicationShutdownHook] o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 15:49:53.884 INFO  [tomcat-shutdown] o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 15:49:53.886 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 15:49:53.888 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 15:49:53.889 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 15:49:55.467 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 15:49:55.487 INFO  [main] com.example.parkinglot.ParkinglotApplication - Starting ParkinglotApplication using Java 21.0.9 with PID 60269 (/Users/haoyu/IdeaProjects/parkinglot/target/classes started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 15:49:55.487 INFO  [main] com.example.parkinglot.ParkinglotApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 15:49:55.729 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 15:49:55.758 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 3 JPA repository interfaces.
+2025-12-24 15:49:55.984 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-24 15:49:55.989 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 15:49:55.990 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 15:49:55.990 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 15:49:56.008 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 15:49:56.009 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 507 ms
+2025-12-24 15:49:56.084 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 15:49:56.100 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 15:49:56.110 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 15:49:56.200 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 15:49:56.211 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 15:49:56.250 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@425b5fe2
+2025-12-24 15:49:56.251 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 15:49:56.266 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 15:49:56.274 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 15:49:56.565 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 15:49:56.622 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 15:49:56.854 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 15:49:57.004 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 15:49:57.013 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-24 15:49:57.017 INFO  [main] com.example.parkinglot.ParkinglotApplication - Started ParkinglotApplication in 1.752 seconds (process running for 1.887)
+2025-12-24 15:50:25.152 INFO  [http-nio-8080-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 15:50:25.152 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 15:50:25.153 INFO  [http-nio-8080-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-24 15:50:25.170 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:50:25.170 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/entry/ABC-001
+2025-12-24 15:50:25.170 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 15:50:25.170 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 15:50:25.170 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.createEntryTicket
+2025-12-24 15:50:25.171 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-24 15:50:25.173 INFO  [http-nio-8080-exec-2] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 15:50:25.228 INFO  [http-nio-8080-exec-2] c.e.parkinglot.service.impl.TicketServiceImpl - >>查找到空闲车位: A001
+2025-12-24 15:50:25.232 INFO  [http-nio-8080-exec-2] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-24 15:50:25.241 INFO  [http-nio-8080-exec-2] c.e.parkinglot.service.impl.TicketServiceImpl - >>新建票据，保存到数据库, 票据id: 6
+2025-12-24 15:50:25.246 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=EntryDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-24T15:50:25.233738, ticketStatus=ACTIVE))
+2025-12-24 15:50:25.247 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:50:36.536 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:50:36.536 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-24 15:50:36.537 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 15:50:36.537 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 15:50:36.537 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-24 15:50:36.537 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-24 15:50:36.538 INFO  [http-nio-8080-exec-3] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 15:50:36.548 INFO  [http-nio-8080-exec-3] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 6
+2025-12-24 15:50:36.552 INFO  [http-nio-8080-exec-3] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: FREE
+2025-12-24 15:50:36.553 INFO  [http-nio-8080-exec-3] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 6
+2025-12-24 15:50:36.556 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=ExitDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-24T15:50:25.233738, exitTime=2025-12-24T15:50:36.552915, ticketStatus=PAID, totalAmount=16.00))
+2025-12-24 15:50:36.557 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:56:58.393 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 15:56:58.394 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-24 15:56:58.394 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 15:56:58.394 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 15:56:58.394 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-24 15:56:58.394 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-24 15:56:58.402 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 15:56:58.409 WARN  [http-nio-8080-exec-5] c.e.p.common.exception.GlobalExceptionHandler - 业务异常: 出场失败: 车辆 ABC-001 不在停车场中!
+2025-12-24 16:34:43.917 INFO  [SpringApplicationShutdownHook] o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 16:34:43.921 INFO  [tomcat-shutdown] o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 16:34:43.923 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 16:34:43.924 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 16:34:43.925 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 16:34:45.899 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 16:34:45.919 INFO  [main] com.example.parkinglot.ParkinglotApplication - Starting ParkinglotApplication using Java 21.0.9 with PID 61476 (/Users/haoyu/IdeaProjects/parkinglot/target/classes started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 16:34:45.919 INFO  [main] com.example.parkinglot.ParkinglotApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 16:34:46.159 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 16:34:46.184 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2025-12-24 16:34:46.410 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-12-24 16:34:46.415 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-12-24 16:34:46.416 INFO  [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 16:34:46.416 INFO  [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 16:34:46.434 INFO  [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 16:34:46.435 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 501 ms
+2025-12-24 16:34:46.510 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 16:34:46.526 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 16:34:46.537 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 16:34:46.638 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 16:34:46.650 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 16:34:46.693 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@517fbf62
+2025-12-24 16:34:46.694 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 16:34:46.710 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 16:34:46.717 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 16:34:47.009 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 16:34:47.064 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 16:34:47.295 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 16:34:47.452 INFO  [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-12-24 16:34:47.461 INFO  [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-12-24 16:34:47.464 INFO  [main] com.example.parkinglot.ParkinglotApplication - Started ParkinglotApplication in 1.766 seconds (process running for 1.901)
+2025-12-24 16:50:44.291 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 16:50:44.299 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - Starting ParkinglotApplicationTests using Java 25.0.1 with PID 62040 (started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 16:50:44.300 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 16:50:44.510 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 16:50:44.534 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2025-12-24 16:50:44.732 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 16:50:44.751 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 16:50:44.762 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 16:50:44.847 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 16:50:44.857 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 16:50:44.899 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48b3b1b8
+2025-12-24 16:50:44.900 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 16:50:44.914 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 16:50:44.921 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 16:50:45.214 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 16:50:45.397 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 16:50:45.689 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 16:50:45.848 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - Started ParkinglotApplicationTests in 1.698 seconds (process running for 2.102)
+2025-12-24 16:50:46.385 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-999，开始检验: 
+2025-12-24 16:50:46.390 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 16:50:46.393 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 16:50:46.393 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>查找到空闲车位: A001
+2025-12-24 16:50:46.394 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>新建票据，保存到数据库, 票据id: null
+2025-12-24 16:50:46.395 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 16:50:46.397 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 16:50:46.397 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 1
+2025-12-24 16:50:46.398 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 1
+2025-12-24 16:50:46.399 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-999，开始检验: 
+2025-12-24 16:50:46.401 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 16:50:46.433 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-24 16:50:46.439 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: FREE
+2025-12-24 16:50:46.440 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-24 16:50:46.442 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 25.00
+2025-12-24 16:50:46.443 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 43.00
+2025-12-24 16:50:46.443 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 46.00
+2025-12-24 16:50:46.444 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 26.00
+2025-12-24 16:50:46.444 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 40.00
+2025-12-24 16:50:46.445 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 24.00
+2025-12-24 16:50:46.475 INFO  [main] c.e.parkinglot.service.impl.VehicleServiceImpl - >>注册车辆,Plate =  ABC-001 , Type = STANDARD, 保存到数据库
+2025-12-24 16:50:46.484 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 16:50:46.485 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 16:50:46.487 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 16:55:15.121 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 16:55:15.130 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - Starting ParkinglotApplicationTests using Java 25.0.1 with PID 62196 (started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 16:55:15.130 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 16:55:15.342 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 16:55:15.368 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2025-12-24 16:55:15.568 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 16:55:15.586 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 16:55:15.596 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 16:55:15.680 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 16:55:15.689 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 16:55:15.725 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52856ff9
+2025-12-24 16:55:15.726 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 16:55:15.737 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 16:55:15.744 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 16:55:16.032 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 16:55:16.090 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 16:55:16.356 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 16:55:16.526 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - Started ParkinglotApplicationTests in 1.531 seconds (process running for 1.893)
+2025-12-24 16:55:16.784 INFO  [main] o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.parkinglot.common.aspect.WebLogAspectIntegrationTest]: WebLogAspectIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-24 16:55:16.791 INFO  [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.parkinglot.ParkinglotApplication for test class com.example.parkinglot.common.aspect.WebLogAspectIntegrationTest
+2025-12-24 16:55:16.802 INFO  [main] c.e.p.common.aspect.WebLogAspectIntegrationTest - Starting WebLogAspectIntegrationTest using Java 25.0.1 with PID 62196 (started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 16:55:16.802 INFO  [main] c.e.p.common.aspect.WebLogAspectIntegrationTest - The following 1 profile is active: "test"
+2025-12-24 16:55:16.848 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 16:55:16.853 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 3 JPA repository interfaces.
+2025-12-24 16:55:16.886 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 16:55:16.887 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 16:55:16.891 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 16:55:16.891 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-24 16:55:16.898 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7b842e79
+2025-12-24 16:55:16.898 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-24 16:55:16.901 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 16:55:16.902 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 16:55:16.917 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 16:55:16.955 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 16:55:17.026 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 16:55:17.088 INFO  [main] o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-24 16:55:17.088 INFO  [main] o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2025-12-24 16:55:17.089 INFO  [main] o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 1 ms
+2025-12-24 16:55:17.100 INFO  [main] c.e.p.common.aspect.WebLogAspectIntegrationTest - Started WebLogAspectIntegrationTest in 0.308 seconds (process running for 2.467)
+2025-12-24 16:55:17.120 INFO  [main] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 16:55:17.120 INFO  [main] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost/api/ticket/entry/ABC-001
+2025-12-24 16:55:17.120 INFO  [main] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 16:55:17.120 INFO  [main] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 127.0.0.1
+2025-12-24 16:55:17.121 INFO  [main] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.createEntryTicket
+2025-12-24 16:55:17.121 INFO  [main] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-24 16:55:17.122 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 16:55:17.176 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>查找到空闲车位: A001
+2025-12-24 16:55:17.179 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-24 16:55:17.189 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>新建票据，保存到数据库, 票据id: 7
+2025-12-24 16:55:17.194 INFO  [main] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=EntryDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-24T16:55:17.181714, ticketStatus=ACTIVE))
+2025-12-24 16:55:17.194 INFO  [main] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 16:55:17.334 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-999，开始检验: 
+2025-12-24 16:55:17.338 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 16:55:17.340 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 16:55:17.340 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>查找到空闲车位: A001
+2025-12-24 16:55:17.341 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>新建票据，保存到数据库, 票据id: null
+2025-12-24 16:55:17.342 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 16:55:17.344 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 16:55:17.344 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 1
+2025-12-24 16:55:17.344 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 1
+2025-12-24 16:55:17.346 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-999，开始检验: 
+2025-12-24 16:55:17.347 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 16:55:17.377 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-24 16:55:17.383 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: FREE
+2025-12-24 16:55:17.384 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-24 16:55:17.385 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 25.00
+2025-12-24 16:55:17.386 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 43.00
+2025-12-24 16:55:17.386 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 46.00
+2025-12-24 16:55:17.387 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 26.00
+2025-12-24 16:55:17.387 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 40.00
+2025-12-24 16:55:17.388 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 24.00
+2025-12-24 16:55:17.419 INFO  [main] c.e.parkinglot.service.impl.VehicleServiceImpl - >>注册车辆,Plate =  ABC-001 , Type = STANDARD, 保存到数据库
+2025-12-24 16:55:17.427 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 16:55:17.428 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 16:55:17.429 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 16:55:17.430 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 16:55:17.430 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-24 16:55:17.431 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-24 17:34:12.198 INFO  [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 17:34:12.206 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - Starting ParkinglotApplicationTests using Java 25.0.1 with PID 63364 (started by haoyu in /Users/haoyu/IdeaProjects/parkinglot)
+2025-12-24 17:34:12.206 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 17:34:12.421 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 17:34:12.446 INFO  [main] o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2025-12-24 17:34:12.650 INFO  [main] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 17:34:12.670 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 17:34:12.681 INFO  [main] o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 17:34:12.765 INFO  [main] o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 17:34:12.774 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-24 17:34:12.818 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5529522f
+2025-12-24 17:34:12.819 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-24 17:34:12.832 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 17:34:12.840 INFO  [main] org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.15
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 17:34:13.133 INFO  [main] o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 17:34:13.249 INFO  [main] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:34:13.540 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-24 17:34:13.709 INFO  [main] com.example.parkinglot.ParkinglotApplicationTests - Started ParkinglotApplicationTests in 1.659 seconds (process running for 2.049)
+2025-12-24 17:34:14.074 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-999，开始检验: 
+2025-12-24 17:34:14.079 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 17:34:14.081 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 17:34:14.081 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>查找到空闲车位: A001
+2025-12-24 17:34:14.081 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>新建票据，保存到数据库, 票据id: null
+2025-12-24 17:34:14.083 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 17:34:14.085 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 17:34:14.085 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 1
+2025-12-24 17:34:14.085 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 1
+2025-12-24 17:34:14.087 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-999，开始检验: 
+2025-12-24 17:34:14.088 INFO  [main] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-24 17:34:14.118 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-24 17:34:14.123 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: FREE
+2025-12-24 17:34:14.125 INFO  [main] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-24 17:34:14.126 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 25.00
+2025-12-24 17:34:14.127 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 43.00
+2025-12-24 17:34:14.127 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 46.00
+2025-12-24 17:34:14.128 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 26.00
+2025-12-24 17:34:14.128 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 40.00
+2025-12-24 17:34:14.129 INFO  [main] c.e.parkinglot.service.impl.BillingServiceImpl - >>计算总金额: 24.00
+2025-12-24 17:34:14.155 INFO  [main] c.e.parkinglot.service.impl.VehicleServiceImpl - >>注册车辆,Plate =  ABC-001 , Type = STANDARD, 保存到数据库
+2025-12-24 17:34:14.163 INFO  [SpringApplicationShutdownHook] o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 17:34:14.164 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-24 17:34:14.166 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-24 17:39:35.011 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m17s729ms).
+2025-12-24 17:39:45.973 INFO  [http-nio-8080-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 17:39:45.973 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 17:39:45.975 INFO  [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-24 17:39:45.997 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 17:39:45.997 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-24 17:39:45.997 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 17:39:45.998 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 17:39:45.998 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-24 17:39:45.998 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-24 17:39:46.002 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 17:39:46.066 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 7
+2025-12-24 17:39:46.072 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: FREE
+2025-12-24 17:39:46.075 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 7
+2025-12-24 17:39:46.086 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=ExitDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-24T16:55:17.181714, exitTime=2025-12-24T17:39:46.074556, ticketStatus=PAID, totalAmount=16.00))
+2025-12-24 17:39:46.087 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 17:39:54.420 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 17:39:54.420 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-24 17:39:54.420 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-24 17:39:54.420 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-24 17:39:54.420 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-24 17:39:54.420 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-24 17:39:54.421 INFO  [http-nio-8080-exec-3] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-24 17:39:54.429 INFO  [http-nio-8080-exec-3] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-24 17:39:54.432 WARN  [http-nio-8080-exec-3] c.e.p.common.exception.GlobalExceptionHandler - 业务异常: 出场失败: 车辆 ABC-001 不在停车场中!
+2025-12-24 22:21:37.867 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m298ms).
+2025-12-24 22:23:01.158 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s291ms).
+2025-12-24 22:38:56.927 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s768ms).
+2025-12-24 22:55:22.720 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s775ms).
+2025-12-24 22:56:17.556 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s836ms).
+2025-12-24 23:00:10.868 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m53s312ms).
+2025-12-24 23:05:35.764 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m54s892ms).
+2025-12-24 23:07:07.429 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s665ms).
+2025-12-24 23:16:29.616 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m52s179ms).
+2025-12-24 23:17:44.892 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m15s276ms).
+2025-12-24 23:20:34.737 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m49s844ms).
+2025-12-24 23:22:01.689 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m26s953ms).
+2025-12-24 23:37:57.434 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s744ms).
+2025-12-24 23:53:53.346 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s913ms).

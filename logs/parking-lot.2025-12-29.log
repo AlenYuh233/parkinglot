@@ -1,0 +1,160 @@
+2025-12-29 00:10:27.473 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s769ms).
+2025-12-29 00:26:53.311 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s824ms).
+2025-12-29 00:42:49.196 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s885ms).
+2025-12-29 00:59:14.929 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s729ms).
+2025-12-29 01:15:40.677 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s740ms).
+2025-12-29 01:17:39.866 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m59s189ms).
+2025-12-29 01:33:52.468 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m12s602ms).
+2025-12-29 01:50:17.036 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s558ms).
+2025-12-29 02:06:42.847 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s800ms).
+2025-12-29 02:22:38.632 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s785ms).
+2025-12-29 02:39:04.415 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s783ms).
+2025-12-29 02:55:01.002 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m56s587ms).
+2025-12-29 03:11:26.913 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s903ms).
+2025-12-29 03:13:08.075 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s154ms).
+2025-12-29 03:17:38.054 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m29s979ms).
+2025-12-29 03:33:33.774 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s720ms).
+2025-12-29 03:49:59.678 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s893ms).
+2025-12-29 04:05:54.651 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s973ms).
+2025-12-29 04:22:20.332 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s671ms).
+2025-12-29 04:38:16.123 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s791ms).
+2025-12-29 04:54:41.895 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s765ms).
+2025-12-29 05:11:07.670 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s768ms).
+2025-12-29 05:27:03.452 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s782ms).
+2025-12-29 05:43:29.233 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s776ms).
+2025-12-29 05:50:28.069 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m58s836ms).
+2025-12-29 06:06:23.703 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s634ms).
+2025-12-29 06:22:50.079 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m56s372ms).
+2025-12-29 06:39:15.832 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s747ms).
+2025-12-29 06:51:15.791 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m59s959ms).
+2025-12-29 07:07:40.746 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s946ms).
+2025-12-29 07:23:36.542 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s795ms).
+2025-12-29 07:30:33.054 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m26s500ms).
+2025-12-29 07:32:33.353 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m299ms).
+2025-12-29 07:48:28.304 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s951ms).
+2025-12-29 07:53:18.346 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m20s34ms).
+2025-12-29 08:09:14.179 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s833ms).
+2025-12-29 08:25:39.823 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s641ms).
+2025-12-29 08:41:35.477 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s654ms).
+2025-12-29 08:52:23.058 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m17s572ms).
+2025-12-29 09:08:08.017 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m44s959ms).
+2025-12-29 09:09:02.857 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s840ms).
+2025-12-29 09:24:58.560 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s703ms).
+2025-12-29 09:41:08.706 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m40s136ms).
+2025-12-29 09:44:20.647 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 09:44:20.648 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/entry/ABC-001
+2025-12-29 09:44:20.648 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-29 09:44:20.648 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-29 09:44:20.648 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.createEntryTicket
+2025-12-29 09:44:20.648 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-29 09:44:20.648 INFO  [http-nio-8080-exec-9] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-29 09:44:20.659 INFO  [http-nio-8080-exec-9] c.e.parkinglot.service.impl.TicketServiceImpl - >>查找到空闲车位: A001
+2025-12-29 09:44:20.660 INFO  [http-nio-8080-exec-9] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-29 09:44:20.663 INFO  [http-nio-8080-exec-9] c.e.parkinglot.service.impl.TicketServiceImpl - >>新建票据，保存到数据库, 票据id: 12
+2025-12-29 09:44:20.667 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=EntryDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-29T09:44:20.660513, ticketStatus=ACTIVE))
+2025-12-29 09:44:20.667 INFO  [http-nio-8080-exec-9] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 09:44:23.395 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 09:44:23.395 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-29 09:44:23.395 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-29 09:44:23.395 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-29 09:44:23.395 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-29 09:44:23.395 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-29 09:44:23.396 INFO  [http-nio-8080-exec-2] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-29 09:44:23.404 INFO  [http-nio-8080-exec-2] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 12
+2025-12-29 09:44:23.406 INFO  [http-nio-8080-exec-2] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: FREE
+2025-12-29 09:44:23.406 INFO  [http-nio-8080-exec-2] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 12
+2025-12-29 09:44:23.411 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=ExitDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-29T09:44:20.660513, exitTime=2025-12-29T09:44:23.406511, ticketStatus=PAID, totalAmount=16.00))
+2025-12-29 09:44:23.411 INFO  [http-nio-8080-exec-2] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 09:44:36.804 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 09:44:36.804 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-29 09:44:36.804 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-29 09:44:36.804 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-29 09:44:36.805 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-29 09:44:36.805 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-29 09:44:36.806 INFO  [http-nio-8080-exec-1] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-29 09:44:36.812 ERROR [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - Exception: BusinessException - 出场失败: 车辆 ABC-001 不在停车场中!
+2025-12-29 09:44:36.814 INFO  [http-nio-8080-exec-1] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 10:30:15.966 INFO  [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 10:30:15.966 INFO  [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/entry/ABC-001
+2025-12-29 10:30:15.966 INFO  [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-29 10:30:15.966 INFO  [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-29 10:30:15.966 INFO  [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.createEntryTicket
+2025-12-29 10:30:15.966 INFO  [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-29 10:30:15.967 INFO  [http-nio-8080-exec-4] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆进场: ABC-001，开始检验: 
+2025-12-29 10:30:15.981 INFO  [http-nio-8080-exec-4] c.e.parkinglot.service.impl.TicketServiceImpl - >>查找到空闲车位: A001
+2025-12-29 10:30:15.982 INFO  [http-nio-8080-exec-4] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: OCCUPIED
+2025-12-29 10:30:15.985 INFO  [http-nio-8080-exec-4] c.e.parkinglot.service.impl.TicketServiceImpl - >>新建票据，保存到数据库, 票据id: 13
+2025-12-29 10:30:15.988 INFO  [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=EntryDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-29T10:30:15.982255, ticketStatus=ACTIVE))
+2025-12-29 10:30:15.988 INFO  [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 10:30:18.188 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 10:30:18.188 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-29 10:30:18.188 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-29 10:30:18.188 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-29 10:30:18.188 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-29 10:30:18.188 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-29 10:30:18.188 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-29 10:30:18.195 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.TicketServiceImpl - >>查询到对应票据id: 13
+2025-12-29 10:30:18.197 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.ParkingServiceImpl - >>更新车位A001状态为: FREE
+2025-12-29 10:30:18.197 INFO  [http-nio-8080-exec-5] c.e.parkinglot.service.impl.TicketServiceImpl - >>更新票据数据，填写金额，保存到数据库, 票据id: 13
+2025-12-29 10:30:18.202 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - Response : ApiResponse(code=200, message=操作成功, data=ExitDTO(vehiclePlate=ABC-001, slotNumber=A001, entryTime=2025-12-29T10:30:15.982255, exitTime=2025-12-29T10:30:18.197810, ticketStatus=PAID, totalAmount=16.00))
+2025-12-29 10:30:18.202 INFO  [http-nio-8080-exec-5] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 10:31:41.828 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 10:31:41.828 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - URL      : http://localhost:8080/api/ticket/exit/ABC-001
+2025-12-29 10:31:41.828 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - Method   : POST
+2025-12-29 10:31:41.828 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - IP       : 0:0:0:0:0:0:0:1
+2025-12-29 10:31:41.828 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - Class    : com.example.parkinglot.controller.TicketController.closeTicket
+2025-12-29 10:31:41.828 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - Args     : [ABC-001]
+2025-12-29 10:31:41.828 INFO  [http-nio-8080-exec-8] c.e.parkinglot.service.impl.TicketServiceImpl - >> 准备处理车辆出场: ABC-001，开始检验: 
+2025-12-29 10:31:41.835 ERROR [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - Exception: BusinessException - 出场失败: 车辆 ABC-001 不在停车场中!
+2025-12-29 10:31:41.835 INFO  [http-nio-8080-exec-8] com.example.parkinglot.common.aspect.WebLogAspect - ======================================================================================
+2025-12-29 14:26:08.521 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m26s648ms).
+2025-12-29 14:43:17.192 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m38s659ms).
+2025-12-29 14:45:42.947 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m25s755ms).
+2025-12-29 15:02:09.456 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s733ms).
+2025-12-29 15:04:51.626 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m41s435ms).
+2025-12-29 15:21:17.357 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s722ms).
+2025-12-29 15:37:13.082 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s725ms).
+2025-12-29 15:46:55.641 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m12s551ms).
+2025-12-29 16:03:20.593 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s950ms).
+2025-12-29 16:21:50.379 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m57s217ms).
+2025-12-29 16:24:41.765 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m21s376ms).
+2025-12-29 16:29:08.112 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m25s651ms).
+2025-12-29 16:33:35.752 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m27s640ms).
+2025-12-29 16:49:31.416 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s664ms).
+2025-12-29 16:53:31.816 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m26s828ms).
+2025-12-29 17:09:56.788 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s969ms).
+2025-12-29 17:26:22.569 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s773ms).
+2025-12-29 17:42:48.328 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s749ms).
+2025-12-29 17:58:44.118 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s790ms).
+2025-12-29 18:15:09.892 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s769ms).
+2025-12-29 18:16:56.194 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m46s302ms).
+2025-12-29 18:22:14.970 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m18s763ms).
+2025-12-29 18:25:46.772 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m31s784ms).
+2025-12-29 18:32:24.716 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m37s944ms).
+2025-12-29 18:48:49.627 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s903ms).
+2025-12-29 19:05:14.616 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s980ms).
+2025-12-29 19:21:40.456 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s833ms).
+2025-12-29 19:26:32.229 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m51s773ms).
+2025-12-29 19:42:58.024 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s794ms).
+2025-12-29 19:59:40.116 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m12s82ms).
+2025-12-29 20:16:05.821 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s700ms).
+2025-12-29 20:17:44.355 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s531ms).
+2025-12-29 20:27:30.633 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m46s278ms).
+2025-12-29 20:43:55.622 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s979ms).
+2025-12-29 20:44:50.465 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s843ms).
+2025-12-29 21:00:46.231 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s766ms).
+2025-12-29 21:02:14.632 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s383ms).
+2025-12-29 21:04:08.134 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s492ms).
+2025-12-29 21:09:18.139 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m39s999ms).
+2025-12-29 21:11:14.652 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m56s513ms).
+2025-12-29 21:27:40.477 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s820ms).
+2025-12-29 21:44:06.201 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s722ms).
+2025-12-29 22:00:31.959 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s752ms).
+2025-12-29 22:17:15.356 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m13s401ms).
+2025-12-29 22:28:45.968 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m605ms).
+2025-12-29 22:44:31.849 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m45s881ms).
+2025-12-29 22:45:26.719 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s870ms).
+2025-12-29 23:00:11.056 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m10s945ms).
+2025-12-29 23:05:59.740 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m48s684ms).
+2025-12-29 23:22:24.682 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s940ms).
+2025-12-29 23:45:18.984 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m54s286ms).

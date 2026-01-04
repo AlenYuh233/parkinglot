@@ -1,0 +1,1 @@
+2026-01-04 11:14:07.644 ERROR [http-nio-8080-exec-4] com.example.parkinglot.common.aspect.WebLogAspect - Exception: BusinessException - 出场失败: 车辆 ABC-001 不在停车场中!
