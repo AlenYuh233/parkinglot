@@ -77,6 +77,9 @@ public class ReportServiceImpl implements ReportService {
         LocalDateTime endTime = date.plusDays(1).atStartOfDay();
 
         BigDecimal totalIncome = ticketRepository.sumTotalAmountByTimeBetween(startTime, endTime);
+
+        log.info("正在计算 {} 日的总收入: {}", date, totalIncome);
+
         return totalIncome != null ? totalIncome : BigDecimal.ZERO;
     }
 }

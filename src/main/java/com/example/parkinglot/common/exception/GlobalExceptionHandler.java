@@ -43,11 +43,10 @@ public class GlobalExceptionHandler {
         Object isLogged = request.getAttribute("EXCEPTION_LOGGED_BY_AOP");
 
         if (isLogged == null) {
-            // AOP 没触发（说明是框架层异常，如 JSON 解析失败），这里必须补打日志
-            // 注意：这种情况下因为没有触发 AOP，所以日志周围自然也没有 "====" 分割线，这是正常的
+            // AOP 没触发, 补打日志
             log.error("系统异常 (Framework/Filter Error)", e);
         } else {
-            // AOP 已经打过日志了（在线内），这里就什么都不用做，避免重复
+            // AOP 已经打过日志了（在线内），什么都不用做，避免重复
         }
 
         return ApiResponse.error("INTERNAL_SERVER_ERROR", "系统繁忙，请稍后重试");

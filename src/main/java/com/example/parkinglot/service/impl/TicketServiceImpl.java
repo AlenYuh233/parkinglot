@@ -13,6 +13,9 @@ import com.example.parkinglot.service.TicketService;
 import com.example.parkinglot.service.VehicleService;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.orm.ObjectOptimisticLockingFailureException;
+import org.springframework.retry.annotation.Backoff;
+import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -40,6 +43,7 @@ public class TicketServiceImpl implements TicketService {
 
     @Override
     @Transactional
+    @Retryable(value = ObjectOptimisticLockingFailureException.class, maxAttempts = 3, backoff = @Backoff(delay = 100))
     public Optional<Ticket> createTicket(String vehiclePlate){
 
         log.info(">> 准备处理车辆进场: {}，开始检验: ", vehiclePlate);
