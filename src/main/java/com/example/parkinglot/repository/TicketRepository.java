@@ -16,6 +16,11 @@ import java.util.Optional;
 @Repository
 public interface TicketRepository extends JpaRepository<Ticket, Long> {
 
+    //使用join fetch，一次性读取数据到内存，n+1问题
+    @Query("SELECT t FROM Ticket t " +
+            "JOIN FETCH t.vehicle " +
+            "JOIN FETCH t.slot " +
+            "WHERE t.status = :status AND t.vehicle = :vehicle")
     Optional<Ticket> findByStatusAndVehicle(TicketStatus status, Vehicle vehicle);
 
     @Query("SELECT SUM(t.totalAmount) " +
