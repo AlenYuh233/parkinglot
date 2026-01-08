@@ -25,7 +25,7 @@ public class WebLogAspect {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         if (attributes != null) {
             HttpServletRequest request = attributes.getRequest();
-            log.info("============================================================================================================================================================================");
+            log.info("============================================================================================================================================================");
             log.info("URL      : {}", request.getRequestURL().toString());
             log.info("Method   : {}", request.getMethod());
             log.info("IP       : {}", request.getRemoteAddr());
@@ -52,7 +52,7 @@ public class WebLogAspect {
     @AfterThrowing(pointcut = "webLog()", throwing = "e")
     public void doAfterThrowing(JoinPoint joinPoint, Throwable e) {
         //打印异常日志
-        log.error("Exception: {} - {}", e.getClass().getSimpleName(), e.getMessage());
+        log.warn("Exception: {} - {}", e.getClass().getSimpleName(), e.getMessage());
 
         //获取 Request 并打上标记：表示由于进入了切面，错误日志已记录
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
@@ -63,6 +63,6 @@ public class WebLogAspect {
 
     @After("webLog()")
     public void doAfter(JoinPoint joinPoint) {
-        log.info("============================================================================================================================================================================");
+        log.info("============================================================================================================================================================");
     }
 }

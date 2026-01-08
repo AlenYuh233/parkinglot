@@ -78,7 +78,7 @@ public class ReportServiceImpl implements ReportService {
 
         BigDecimal totalIncome = ticketRepository.sumTotalAmountByTimeBetween(startTime, endTime);
 
-        log.info("正在计算 {} 日的总收入: {}", date, totalIncome);
+        log.info(">> 正在计算 {} 日的总收入: {}", date, totalIncome);
 
         return totalIncome != null ? totalIncome : BigDecimal.ZERO;
     }

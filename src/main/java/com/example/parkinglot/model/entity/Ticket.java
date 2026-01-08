@@ -13,7 +13,10 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Accessors(chain = true)
-@Table(name = "tickets")
+@Table(name = "tickets", indexes = {
+        @Index(name = "idx_ticket_vehicle_status", columnList = "vehicle_Id, status"),
+        @Index(name = "idx_ticket_slot", columnList = "slot_id")
+})
 public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

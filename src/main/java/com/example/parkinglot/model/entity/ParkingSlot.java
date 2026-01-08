@@ -11,7 +11,10 @@ import lombok.experimental.Accessors;
 @Getter
 @Setter
 @Accessors(chain = true)
-@Table(name = "parking_slots")
+@Table(name = "parking_slots", indexes = {
+    @Index(name = "idx_slot_status_type", columnList = "status, type"),
+    @Index(name = "idx_slot_status", columnList = "status")
+})
 public class ParkingSlot{
 
     @Id

@@ -30,7 +30,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(NoHandlerFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ApiResponse<Void> handleNoHandlerFoundException(NoHandlerFoundException e){
-        log.error("接口不存在 - 请求方法：{}，请求路径：{}", e.getHttpMethod(), e.getRequestURL(), e);
+        log.warn("接口不存在 - 请求方法：{}，请求路径：{}", e.getHttpMethod(), e.getRequestURL(), e);
         return ApiResponse.error("NOT_FOUND", "接口不存在（Not Found）");
     }
 
@@ -43,7 +43,7 @@ public class GlobalExceptionHandler {
         Object isLogged = request.getAttribute("EXCEPTION_LOGGED_BY_AOP");
 
         if (isLogged == null) {
-            // AOP 没触发, 补打日志
+            // AOP 没触发（不是controller层抛出的异常）, 补打完整日志
             log.error("系统异常 (Framework/Filter Error)", e);
         } else {
             // AOP 已经打过日志了（在线内），什么都不用做，避免重复
